@@ -1,0 +1,25 @@
+<table class="table table-bordered  table-hover shadow mt-2 text-center">
+  <thead class="bg-dark text-white">
+    <tr>
+      <th scope="col">S.no</th>
+      <th scope="col">State Name</th>
+      <th scope="col">Confirmed Cases</th>
+      <th scope="col">Active Cases</th>
+      <th scope="col">Recovered Cases</th>
+      <th scope="col">Deaths</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let state of stateWiseData; let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{state.state}}</td>
+      <td>{{state.confirmed}}</td>
+      <td>{{state.active}}</td>
+      <td>{{state.recovered}}</td>
+      <td>{{state.deaths}}</td>
+
+    </tr>
+
+  </tbody>
+</table>
